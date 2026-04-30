@@ -1,0 +1,50 @@
+@import url('./fonts.scss');
+
+:root {
+  --font-family: "Inter";
+  --bg: radial-gradient(circle at top, #0b0f1a, #05060a);
+  --accent: #7c5cff;
+  --grid: rgba(124, 92, 255, 0.15);
+  --glow: rgba(124, 92, 255, 0.3);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+button,input {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  }
+
+body[data-theme="neon"] {
+  --bg: #000;
+  --accent: #00ffd5;
+  --grid: rgba(0, 255, 213, 0.2);
+  --glow: rgba(0, 255, 213, 0.5);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  // height: 200vh;
+  color: #fff;
+  font-family: var(--font-family);
+  }

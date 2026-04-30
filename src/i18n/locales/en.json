@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "hero" : {
+    "author" : "Kamron Zamirov",
+    "developer" : "Frontend developer"
+  },
+  "about" : {
+    "title" : "Frontend Developer & UI Engineer",
+    "description" : "I build high-performance, visually engaging interfaces using modern web technologies. Focused on delivering clean, scalable and user-centered UI.",
+    "stack" : "Stack",
+    "exp" : "Years experience",
+    "focus" : "Focus",
+    "profile" : "SYSTEM PROFILE"
+  }
+
+}

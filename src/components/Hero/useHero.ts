@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 
 const useHero = () => {
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
-  const [strength, setStrength] = useState(0);
+  const [x, setX] = useState(0)
+  const [y, setY] = useState(0)
+  const [strength, setStrength] = useState(0)
 
   const isDesktop = window.innerWidth > 1024
 
@@ -27,7 +27,7 @@ const useHero = () => {
     const power = Math.max(0, 300 - distance * 0.25)
 
     setStrength(power)
-  };
+  }
 
   useEffect(() => {
     setX(window.innerWidth / 2)

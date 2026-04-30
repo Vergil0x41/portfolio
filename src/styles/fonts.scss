@@ -5,7 +5,7 @@ $Inter:     ('Regular', 400),
 @each $name, $weight in $Inter {
     @font-face {
         font-family: 'Inter';
-        src: url('/public/fonts/Inter_18pt-#{$name}.ttf');
+        src: url('/fonts/Inter_18pt-#{$name}.ttf');
         font-weight: $weight;
     }
 }

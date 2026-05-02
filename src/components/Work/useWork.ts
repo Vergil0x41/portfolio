@@ -42,7 +42,7 @@ const useWork = () => {
           }));
 
         setProjects(filtered);
-        console.log(filtered);
+        // console.log(filtered);
         
       } catch (err) {
         console.error("GitHub API error:", err);

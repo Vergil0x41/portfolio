@@ -15,6 +15,12 @@
     "exp" : "Years experience",
     "focus" : "Focus",
     "profile" : "SYSTEM PROFILE"
+  },
+  "work" : {
+    "title" : "Work",
+    "loading" : "Loading project archive...",
+    "loaded" : "PROJECTS LOADED",
+    "demo" : "Demo"
   }
 
 }

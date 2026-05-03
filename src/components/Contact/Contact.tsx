@@ -21,7 +21,7 @@ const Contact = () => {
     } = useContact()
 
     return (
-        <section ref={ref} className={`contact ${isVisible ? "contact--active" : ""}`}>
+        <section ref={ref} className={`contact ${isVisible ? "contact--active" : ""}`} id="contact">
         <div className="contact__container">
 
             <p className="contact__label">&gt; {t("contact.label")}</p>

@@ -12,7 +12,7 @@ const Work: FC = () => {
   const { t } = useTranslation()
 
   return (
-    <section ref={ref} className={`work ${isVisible ? "active" : ""} container`}>
+    <section ref={ref} className={`work ${isVisible ? "active" : ""} container`} id="work">
       <div className="work__container">
         <p className="work__label">
           {loading ? t('work.loading') : t('work.loaded')}

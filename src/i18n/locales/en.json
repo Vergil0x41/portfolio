@@ -21,6 +21,24 @@
     "loading" : "Loading project archive...",
     "loaded" : "PROJECTS LOADED",
     "demo" : "Demo"
+  },
+  "contact": {
+    "label": "contact",
+    "title": "Let’s work together",
+
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+
+    "send": "SEND TRANSMISSION",
+    "sending": "sending...",
+
+    "status": {
+      "success": "message sent",
+      "error": "error, try again"
+    },
+    "required" : "Required",
+    "invalid_email" : "Invalid email"
   }
 
 }

@@ -1,0 +1,235 @@
+.contact {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 1;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+
+    &--active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    &__label {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+
+        color: #fff;
+        opacity: 0.6;
+        font-family: var(--font-family);
+    }
+
+    &__title {
+        font-size: 32px;
+        margin-bottom: 40px;
+
+        color: #fff;
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    /* ===== GLASS PANEL ===== */
+    &__panel {
+        position: relative;
+
+        width: 100%;
+        max-width: 520px;
+
+        padding: 24px;
+        border-radius: 16px;
+
+        background: rgba(15, 15, 20, 0.85);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+
+        border: 1px solid rgba(255, 255, 255, 0.15);
+
+        box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.6),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+        overflow: hidden;
+    }
+
+    &__panel::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background: radial-gradient(
+        circle at top left,
+        rgba(255, 255, 255, 0.08),
+        transparent 60%
+        );
+
+        pointer-events: none;
+    }
+
+    &__panel::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background: radial-gradient(
+        circle at top,
+        color-mix(in srgb, var(--accent) 18%, transparent),
+        transparent 70%
+        );
+
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        position: relative;
+        z-index: 2;
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        input,
+        textarea {
+        width: 100%;
+
+        padding: 12px 14px;
+
+        background: rgba(255, 255, 255, 0.03);
+
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 8px;
+
+        color: #fff;
+        font-family: var(--font-family);
+        font-size: 14px;
+
+        outline: none;
+
+        transition: all 0.25s ease;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        &:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 1px var(--accent), 0 0 15px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        }
+
+        textarea {
+        min-height: 120px;
+        resize: none;
+        }
+    }
+
+    &__error {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.6);
+        margin-left: 2px;
+    }
+
+    &__button {
+        padding: 12px 16px;
+
+        border: 1px solid var(--accent);
+        border-radius: 8px;
+
+        background: transparent;
+
+        color: #fff;
+        font-family: var(--font-family);
+        font-size: 14px;
+        letter-spacing: 1px;
+
+        cursor: pointer;
+
+        transition: all 0.25s ease;
+
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+        box-shadow: 0 0 20px var(--accent);
+        transform: translateY(-1px);
+        }
+
+        &:active {
+        transform: translateY(0px);
+        }
+
+        &:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+        box-shadow: none;
+        }
+    }
+
+    &__status {
+        margin-top: 12px;
+
+        font-size: 14px;
+        font-family: var(--font-family);
+
+        color: #fff;
+        opacity: 0.8;
+
+        &--sending {
+        text-shadow: 0 0 10px var(--accent);
+        }
+
+        &--success {
+        text-shadow: 0 0 10px var(--accent);
+        }
+
+        &--error {
+        opacity: 0.7;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__title {
+        font-size: 26px;
+        }
+
+        &__panel {
+        padding: 18px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &__title {
+        font-size: 22px;
+        }
+
+        &__panel {
+        padding: 16px;
+        border-radius: 12px;
+        }
+
+        &__button {
+        width: 100%;
+        }
+    }
+}

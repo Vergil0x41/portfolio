@@ -39,6 +39,9 @@
     },
     "required" : "Required",
     "invalid_email" : "Invalid email"
+  },
+  "footer" : {
+    "build" : "Build by human on earth"
   }
 
 }

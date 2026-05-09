@@ -29,7 +29,7 @@ const About: FC = () => {
             <div className="about__stats">
 
               <div className="stat">
-                <span>2+</span>
+                <span>1+</span>
                 <p>{t("about.exp")}</p>
               </div>
 
